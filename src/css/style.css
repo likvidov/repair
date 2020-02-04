@@ -82,6 +82,11 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #ffd200;
 }
 
 /*  Импорт стилей шапки */
@@ -258,6 +263,7 @@ img {
   }
 }
 
+/*  Стили для блока offer */
 .offer {
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
@@ -304,6 +310,33 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 31px;
+}
+
+.offer-block-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__description {
+  width: 90%;
+  line-height: 24px;
+}
+
+.offer__phone {
+  line-height: 24px;
+}
+
+.offer__phone__link {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer__phone__link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -327,5 +360,38 @@ img {
     width: 100%;
     padding-right: 0;
   }
+}
+
+/*  Стили модального окна*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

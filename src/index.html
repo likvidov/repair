@@ -23,7 +23,7 @@
                     </div>
                     <!-- /.navbar__contacts -->
 
-                    <button class="button navbar__button">Перезвоните мне</button>
+                    <button id="button"  class="button navbar__button">Перезвоните мне</button  >
                 </div>
                 <!-- /.navbar__info -->
             </div>
@@ -79,6 +79,12 @@
                         <input type="tel" class="input offer__input" placeholder="Ваш телефон">
                         <button class="button offer__button">Получить бесплатный дизайн-проект</button>
                     </form>
+
+                    <div class="offer-block-description">
+                        <span class="offer__description">Наш менеджер перезвонит Вам в течение 60 секунд</span>
+                        <span class="offer__phone">или перезвоните нам сами <a class="offer__phone__link" href="tel:+7(495)42-251-31">+7 (495) 42-251-31</a></span>
+                    </div>
+                    
                 </div>
                 <!-- /.offer-block -->
             </div>
@@ -86,5 +92,18 @@
         </section>
         <!-- /.offer -->
     </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-dialog">
+            <button id="close" class="modal-dialog__close">&times;</button>
+            <!-- /.modal-dialog__close -->
+            <h4 class="modal-dialog__title">Всплывающие окно</h4>
+            <!-- /.modal-dialog__title -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
