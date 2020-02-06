@@ -14,7 +14,9 @@
     &-block
         width: 50%
         padding-right: 90px
-        position: relative
+        position: relative 
+        &-description
+            display: flex
     &__title
         max-width: 360px
         line-height: 35px
@@ -32,8 +34,7 @@
         width: 100%
         min-height: 70px
         margin-bottom: 31px
-    &-block-description
-        display: flex
+   
         
     &__description
         width: 90%
@@ -56,7 +57,15 @@
             margin-bottom: 10px
         &__button
             font-size: 13px
-
+        &-block
+            &-description
+                display: flex
+                flex-direction: column
+                text-align: center
+        &__description
+            flex-basis: 100%
+        &__phone
+            flex-basis: 100%
 @media ( max-width: 768px )
     .offer
         background: #ffffff
