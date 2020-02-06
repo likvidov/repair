@@ -14,6 +14,27 @@ close.addEventListener('click', () => {
 });
 
 $(document).ready(function() {
+    $('#brif-form').validate({
+      rules: {
+        username: {
+          required: true,
+          minlength: 2
+        },
+        phone: {
+          required: true
+        }
+      },
+      messages: {
+        username: {
+          required: "Укажите имя",
+          minlength: jQuery.validator.format("Осталось смиволов: {0} ")
+        },
+        phone: "Введите ваш телефон"
+      }
+    });
+
+    $('.phone').mask("+7 (999) 999-9999");
+
     $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,

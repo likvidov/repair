@@ -248,9 +248,9 @@
                         <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                         <span class="form__subtitle">Для этого заполните форму ниже</span>
 
-                        <form action="#">
-                            <input type="text" class="input brif__input" placeholder="Ваше имя" >
-                            <input type="text" class="input brif__input" placeholder="Ваш телефон" required>
+                        <form action="#" id="brif-form">
+                            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
                             <button class="button brif__button">Расчитать стоимость</button>
                             <span class="brif__description">Мы перезвоним Вам в течение 60 секунд</span>
                         </form>
@@ -263,6 +263,55 @@
         </section>
         <!-- /.section brif -->
     </main>
+
+    <footer class="footer">
+        <div class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A859ae9b90f0c92a952bfdf31f5ec47e44a37a0697241d207186bd372261c6abc&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">
+                        Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта
+                    </h3>
+
+                    <ul class="contancts-list">
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/map-placeholder.png" alt="map">
+                            </span>
+                            <span class="contacts-list__text">
+                                г. Москва<br/> 
+                                ул. Ленинга, д. 10,корпус 2, оф. 308
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/clock-with-white-face.png" alt="clock">
+                            </span>
+                            <span class="contacts-list__text">
+                                Режим работы:<br/> 
+                                с 9:00 до 18:00
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/phone-call-button.png" alt="phone">
+                            </span>
+                            <span class="contacts-list__text">
+                                Телефон:<br/>    
+                                <a href="tel:+7(495)42-251-31">+7 (495) 42-251-31</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.contancts -->
+            </div>
+            <!-- /.contancts-block -->
+        </div>
+        <!-- /.container -->
+    </footer>
 
     <div id="modal" class="modal">
         <div class="modal-dialog">
@@ -279,6 +328,8 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
